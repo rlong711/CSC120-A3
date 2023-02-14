@@ -7,6 +7,9 @@ public class Conversation {
   
     Double Rounds; 
     Scanner in; 
+    String response_list; 
+    
+    response_list = new String[3]; 
 
     in = new Scanner(System.in);
     
@@ -14,7 +17,6 @@ public class Conversation {
     Rounds = in.nextDouble(); 
     
     String user_input; 
-    String [] response_list= {"hmm", "so cool", "say less"}; 
 
 
     Scanner my_convo = new Scanner(System.in); 
