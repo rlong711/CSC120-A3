@@ -7,9 +7,14 @@ public class Conversation {
   
     Double Rounds; 
     Scanner in; 
-    String response_list; 
     
-    response_list = new String[3]; 
+    
+    String[] responses = {"hmmm", "Tell me more!", "That's crazy!!"}; 
+
+
+
+    
+    
 
     in = new Scanner(System.in);
     
@@ -23,7 +28,9 @@ public class Conversation {
     
     for (int i = 0; i < Rounds; i++) {
       user_input = my_convo.nextLine(); 
-      System.out.println(user_input);
+      int randomIndex = (int)(Math.random()*responses.length); 
+      String randomElement = responses[randomIndex]; 
+      System.out.println(randomElement); 
 
       
 
