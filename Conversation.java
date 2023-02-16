@@ -45,7 +45,9 @@ public class Conversation {
     
     System.out.println("How many Rounds? ");
     Rounds = in.nextDouble(); 
-    Transcript.add("How many Rounds?" + Rounds); 
+    Transcript.add("How many Rounds? " + Rounds); 
+    System.out.println("Now...Tell me what is on your mind.");
+    Transcript.add("Now...Tell me what is on your mind");
 
     // String new_sentence = " "; 
 
@@ -67,8 +69,8 @@ public class Conversation {
       // for (int j = 0; j < user_input_splitted.length; j++) {
       //   for (int k = 0; k < mirror_words.length; k++) {
       //     if (user_input_splitted[j].equals(mirror_words[j])) {
-      //       new_sentence += replacements[k]; 
-      //       System.out.println(new_sentence);
+      //       String replacement_response = user_input_splitted[j].replace(user_input_splitted[j], replacements[j]);
+      //       System.out.println(replacement_response);
       //     }
       //       else {
       //         int randomIndex = (int)(Math.random()*responses.length); 
@@ -76,7 +78,7 @@ public class Conversation {
       //         System.out.println(randomElement); 
       //     }
       //   }
-      // } I tried my best to get the mirror words and replacements to work. My attempt is above this. 
+      // } //I tried my best to get the mirror words and replacements to work. My attempt is above this. 
 
       int randomIndex = (int)(Math.random()*responses.length); 
       String randomElement = responses[randomIndex]; 
